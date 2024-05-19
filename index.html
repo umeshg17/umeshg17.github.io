@@ -24,7 +24,6 @@
         header {
             text-align: center;
             padding: 20px 0;
-            border-bottom: 1px solid #e0e0e0;
         }
         header h1 {
             margin: 0;
@@ -39,19 +38,19 @@
             text-align: center;
             margin: 20px 0;
         }
+        .contact p {
+            margin: 5px 0;
+        }
         .contact a {
             color: #0073e6;
             text-decoration: none;
-            margin: 0 10px;
             font-weight: bold;
         }
         .contact a:hover {
             text-decoration: underline;
         }
         section {
-            margin: 20px 0;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #e0e0e0;
+            margin: 30px 0;
         }
         h2 {
             color: #0073e6;
@@ -66,24 +65,35 @@
         li {
             margin: 10px 0;
         }
-        .experience, .education, .certifications {
-            padding-left: 20px;
+        .experience, .education, .certifications, .projects {
+            padding-left: 0;
         }
-        .experience ul, .education ul, .certifications ul {
-            margin: 0;
-        }
-        .experience li, .education li, .certifications li {
-            margin-bottom: 10px;
+        .experience li, .education li, .certifications li, .projects li {
+            margin-bottom: 20px;
         }
         .experience strong, .education strong, .certifications strong {
             color: #0073e6;
         }
-        @media (max-width: 600px) {
-            .container {
-                width: 90%;
-                margin: 20px auto;
-                padding: 10px;
-            }
+        .date, .institution, .company {
+            display: block;
+            font-weight: bold;
+            color: #0073e6;
+        }
+        .institution, .company {
+            font-size: 1.1em;
+        }
+        .location {
+            font-style: italic;
+            color: #666;
+        }
+        .skills li {
+            background: #0073e6;
+            color: #fff;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 5px;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -105,44 +115,57 @@
             <h2>Education</h2>
             <ul class="education">
                 <li>
-                    <strong>Master of Technology - Computer Science</strong>, IISc Bangalore<br>
-                    July 2023<br>
-                    Coursework: Network and Distributed Systems Security, Principle of Distributed Software, and Scalable Systems for Data Science.
+                    <span class="date">July 2023</span>
+                    <span class="institution">Master of Technology - Computer Science, IISc Bangalore</span>
+                    <p>Coursework: Network and Distributed Systems Security, Principles of Distributed Software, and Scalable Systems for Data Science.</p>
                 </li>
                 <li>
-                    <strong>Bachelor of Engineering - Computer Science</strong>, MGM's COE Nanded<br>
-                    July 2019
+                    <span class="date">July 2019</span>
+                    <span class="institution">Bachelor of Engineering - Computer Science, MGM's COE Nanded</span>
                 </li>
             </ul>
         </section>
         <section>
             <h2>Skills</h2>
             <ul class="skills">
-                <li>Bash, Python, AWS, Docker, Kubernetes (CKA), Pulumi, Helm, GitHub Actions, CI/CD, GitOps, ArgoCD</li>
+                <li>Bash</li>
+                <li>Python</li>
+                <li>AWS</li>
+                <li>Docker</li>
+                <li>Kubernetes (CKA)</li>
+                <li>Pulumi</li>
+                <li>Helm</li>
+                <li>GitHub Actions</li>
+                <li>CI/CD</li>
+                <li>GitOps</li>
+                <li>ArgoCD</li>
             </ul>
         </section>
         <section>
             <h2>Experience</h2>
             <ul class="experience">
                 <li>
-                    <strong>Big Data Engineer</strong><br>
-                    Exadatum Software Services Pvt Ltd, Pune, Maharashtra, IN<br>
-                    July 2019 - April 2020<br>
+                    <span class="date">July 2019 - April 2020</span>
+                    <span class="company">Big Data Engineer, Exadatum Software Services Pvt Ltd</span>
+                    <span class="location">Pune, Maharashtra, IN</span>
                     <ul>
-                        <li>Led the effort to set up a Spark cluster on Docker, using Apache Livy to run Spark code in Jupyter Notebooks, saving costs and easing development.</li>
-                        <li>Created Java JUnit tests to ensure smooth data flow from Kafka and Google Cloud Storage, simplifying project structure.</li>
+                        <li>Led the setup of a Spark cluster on Docker, using Apache Livy to run Spark code in Jupyter Notebooks, reducing the need for expensive Google Cloud Dataproc.</li>
+                        <li>Created Java JUnit tests to ensure smooth data flow from Kafka and Google Cloud Storage, simplifying the project structure by merging multiple subprojects.</li>
                     </ul>
                 </li>
                 <li>
-                    <strong>DevOps Engineer</strong><br>
-                    Amagi Media Labs Pvt Ltd, Bengaluru, Karnataka, IN<br>
-                    Aug 2023 - present<br>
+                    <span class="date">Aug 2023 - present</span>
+                    <span class="company">DevOps Engineer, Amagi Media Labs Pvt Ltd</span>
+                    <span class="location">Bengaluru, Karnataka, IN</span>
                     <ul>
-                        <li>Implemented GitOps-based deployment strategies for microservices across multiple environments.</li>
-                        <li>Configured CI/CD pipelines, integrated container security scanning.</li>
-                        <li>Managed infrastructure updates, implemented cost optimization strategies.</li>
-                        <li>Enhanced service discovery and routing, developed Slack-Bot features for self-serve deployment.</li>
-                        <li>Established monitoring and alerting mechanisms, leveraged IaC principles using Pulumi.</li>
+                        <li>Implemented GitOps-based deployment strategies for microservices across multiple environments, ensuring seamless deployment processes.</li>
+                        <li>Configured CI/CD pipelines for automated testing and deployment, integrating container security scanning for enhanced service security.</li>
+                        <li>Managed infrastructure updates, including transitioning nodes and implementing efficient node management solutions.</li>
+                        <li>Developed cost optimization strategies, such as resource tagging and database migration, to optimize cloud spending.</li>
+                        <li>Enhanced service discovery and routing by configuring load balancer controllers and ingress controllers for improved traffic management.</li>
+                        <li>Developed Slack-Bot features for self-serve deployment and automation of deployment processes, reducing manual effort.</li>
+                        <li>Established monitoring and alerting mechanisms for PRs, deployments, and cost management to ensure system stability and cost efficiency.</li>
+                        <li>Leveraged Infrastructure as Code (IaC) principles using Pulumi for infrastructure provisioning and management.</li>
                     </ul>
                 </li>
             </ul>
@@ -152,6 +175,15 @@
             <ul class="certifications">
                 <li><a href="https://www.credly.com/badges/75d9811c-198b-4dc5-a41d-dd3a6e6d9ee3/public_url">Google IT Automation with Python Professional Certificate</a></li>
                 <li><a href="https://www.credly.com/badges/5e298069-3cc7-4a4b-b30c-79a8ae8f624f/public_url">CKA: Certified Kubernetes Administrator</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <ul class="projects">
+                <li>
+                    <strong>Project Title:</strong> Hiring Search Tool<br>
+                    <p>Built a tool to search for Hiring Managers and Recruiters using ReactJS, NodeJS, Firebase, and boolean queries. Over 25,000 people have used it so far, with 5,000+ queries saved and shared, providing better search results than LinkedIn. <a href="https://hiring-search.careerflow.ai/">Try it here</a>.</p>
+                </li>
             </ul>
         </section>
     </div>
