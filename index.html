@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
             color: #333;
+            line-height: 1.6;
         }
         .container {
             max-width: 900px;
@@ -65,15 +66,6 @@
         li {
             margin: 10px 0;
         }
-        .experience, .education, .certifications, .projects {
-            padding-left: 0;
-        }
-        .experience li, .education li, .certifications li, .projects li {
-            margin-bottom: 20px;
-        }
-        .experience strong, .education strong, .certifications strong {
-            color: #0073e6;
-        }
         .date, .institution, .company {
             display: block;
             font-weight: bold;
@@ -94,6 +86,16 @@
             border-radius: 5px;
             margin: 5px;
             font-size: 0.9em;
+        }
+        .description {
+            margin: 10px 0;
+        }
+        .certifications a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        .certifications a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -146,27 +148,19 @@
             <ul class="experience">
                 <li>
                     <span class="date">July 2019 - April 2020</span>
-                    <span class="company">Big Data Engineer, Exadatum Software Services Pvt Ltd</span>
+                    <span class="company">Exadatum Software Services Pvt Ltd</span>
                     <span class="location">Pune, Maharashtra, IN</span>
-                    <ul>
-                        <li>Led the setup of a Spark cluster on Docker, using Apache Livy to run Spark code in Jupyter Notebooks, reducing the need for expensive Google Cloud Dataproc.</li>
-                        <li>Created Java JUnit tests to ensure smooth data flow from Kafka and Google Cloud Storage, simplifying the project structure by merging multiple subprojects.</li>
-                    </ul>
+                    <p class="description">
+                        Led the setup of a Spark cluster on Docker, using Apache Livy to run Spark code in Jupyter Notebooks, reducing the need for expensive Google Cloud Dataproc. Created Java JUnit tests to ensure smooth data flow from Kafka and Google Cloud Storage, simplifying the project structure by merging multiple subprojects.
+                    </p>
                 </li>
                 <li>
                     <span class="date">Aug 2023 - present</span>
-                    <span class="company">DevOps Engineer, Amagi Media Labs Pvt Ltd</span>
+                    <span class="company">Amagi Media Labs Pvt Ltd</span>
                     <span class="location">Bengaluru, Karnataka, IN</span>
-                    <ul>
-                        <li>Implemented GitOps-based deployment strategies for microservices across multiple environments, ensuring seamless deployment processes.</li>
-                        <li>Configured CI/CD pipelines for automated testing and deployment, integrating container security scanning for enhanced service security.</li>
-                        <li>Managed infrastructure updates, including transitioning nodes and implementing efficient node management solutions.</li>
-                        <li>Developed cost optimization strategies, such as resource tagging and database migration, to optimize cloud spending.</li>
-                        <li>Enhanced service discovery and routing by configuring load balancer controllers and ingress controllers for improved traffic management.</li>
-                        <li>Developed Slack-Bot features for self-serve deployment and automation of deployment processes, reducing manual effort.</li>
-                        <li>Established monitoring and alerting mechanisms for PRs, deployments, and cost management to ensure system stability and cost efficiency.</li>
-                        <li>Leveraged Infrastructure as Code (IaC) principles using Pulumi for infrastructure provisioning and management.</li>
-                    </ul>
+                    <p class="description">
+                        Implemented GitOps-based deployment strategies for microservices across multiple environments, ensuring seamless deployment processes. Configured CI/CD pipelines for automated testing and deployment, integrating container security scanning for enhanced service security. Managed infrastructure updates, including transitioning nodes and implementing efficient node management solutions. Developed cost optimization strategies, such as resource tagging and database migration, to optimize cloud spending. Enhanced service discovery and routing by configuring load balancer controllers and ingress controllers for improved traffic management. Developed Slack-Bot features for self-serve deployment and automation of deployment processes, reducing manual effort. Established monitoring and alerting mechanisms for PRs, deployments, and cost management to ensure system stability and cost efficiency. Leveraged Infrastructure as Code (IaC) principles using Pulumi for infrastructure provisioning and management.
+                    </p>
                 </li>
             </ul>
         </section>
@@ -175,15 +169,6 @@
             <ul class="certifications">
                 <li><a href="https://www.credly.com/badges/75d9811c-198b-4dc5-a41d-dd3a6e6d9ee3/public_url">Google IT Automation with Python Professional Certificate</a></li>
                 <li><a href="https://www.credly.com/badges/5e298069-3cc7-4a4b-b30c-79a8ae8f624f/public_url">CKA: Certified Kubernetes Administrator</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <ul class="projects">
-                <li>
-                    <strong>Project Title:</strong> Hiring Search Tool<br>
-                    <p>Built a tool to search for Hiring Managers and Recruiters using ReactJS, NodeJS, Firebase, and boolean queries. Over 25,000 people have used it so far, with 5,000+ queries saved and shared, providing better search results than LinkedIn. <a href="https://hiring-search.careerflow.ai/">Try it here</a>.</p>
-                </li>
             </ul>
         </section>
     </div>
