@@ -7,9 +7,9 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
             color: #333;
         }
         .container {
@@ -18,36 +18,52 @@
             padding: 20px;
             background: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
         }
         header {
             text-align: center;
             padding: 20px 0;
+            border-bottom: 1px solid #e0e0e0;
         }
         header h1 {
             margin: 0;
+            font-size: 2.5em;
+            color: #0073e6;
         }
         .contact {
             text-align: center;
             margin: 20px 0;
         }
         .contact a {
-            color: #333;
+            color: #0073e6;
             text-decoration: none;
             margin: 0 10px;
+            font-weight: bold;
         }
         section {
             margin: 20px 0;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
         }
         h2 {
-            border-bottom: 2px solid #333;
+            color: #0073e6;
+            border-bottom: 2px solid #0073e6;
             padding-bottom: 5px;
+            margin-bottom: 10px;
         }
-        .skills, .experience, .education, .certifications {
+        ul {
             list-style-type: none;
             padding: 0;
         }
-        .experience li, .education li, .certifications li {
+        li {
             margin: 10px 0;
+        }
+        .experience ul, .education ul, .certifications ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .experience li, .education li, .certifications li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -57,7 +73,7 @@
             <h1>Umesh Gaikwad</h1>
         </header>
         <div class="contact">
-            <p>+91 9766185211 | Nanded, Maharashtra, IN</p>
+            <p>Nanded, Maharashtra, IN | +91 9766185211</p>
             <p><a href="mailto:gaikwadumesh123@gmail.com">gaikwadumesh123@gmail.com</a> | <a href="https://www.linkedin.com/in/umeshg17/">LinkedIn</a></p>
         </div>
         <section>
@@ -68,12 +84,12 @@
             <h2>Education</h2>
             <ul class="education">
                 <li>
-                    <strong>Master of Technology - Computer Science</strong>, IISc Bangalore <br>
-                    July 2023 <br>
+                    <strong>Master of Technology - Computer Science</strong>, IISc Bangalore<br>
+                    July 2023<br>
                     Coursework: Network and Distributed Systems Security, Principle of Distributed Software, and Scalable Systems for Data Science.
                 </li>
                 <li>
-                    <strong>Bachelor of Engineering - Computer Science</strong>, MGM's COE Nanded <br>
+                    <strong>Bachelor of Engineering - Computer Science</strong>, MGM's COE Nanded<br>
                     July 2019
                 </li>
             </ul>
@@ -88,18 +104,18 @@
             <h2>Experience</h2>
             <ul class="experience">
                 <li>
-                    <strong>Big Data Engineer</strong> <br>
-                    Exadatum Software Services Pvt Ltd, Pune, Maharashtra, IN <br>
-                    July 2019 - April 2020 <br>
+                    <strong>Big Data Engineer</strong><br>
+                    Exadatum Software Services Pvt Ltd, Pune, Maharashtra, IN<br>
+                    July 2019 - April 2020<br>
                     <ul>
                         <li>Led the effort to set up a Spark cluster on Docker, using Apache Livy to run Spark code in Jupyter Notebooks, saving costs and easing development.</li>
                         <li>Created Java JUnit tests to ensure smooth data flow from Kafka and Google Cloud Storage, simplifying project structure.</li>
                     </ul>
                 </li>
                 <li>
-                    <strong>DevOps Engineer</strong> <br>
-                    Amagi Media Labs Pvt Ltd, Bengaluru, Karnataka, IN <br>
-                    Aug 2023 - present <br>
+                    <strong>DevOps Engineer</strong><br>
+                    Amagi Media Labs Pvt Ltd, Bengaluru, Karnataka, IN<br>
+                    Aug 2023 - present<br>
                     <ul>
                         <li>Implemented GitOps-based deployment strategies for microservices across multiple environments.</li>
                         <li>Configured CI/CD pipelines, integrated container security scanning.</li>
