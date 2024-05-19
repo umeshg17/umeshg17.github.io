@@ -12,11 +12,10 @@
             margin: 0;
             padding: 0;
             color: #333;
-            line-height: 1.6;
         }
         .container {
             max-width: 900px;
-            margin: 50px auto;
+            margin: 20px auto;
             padding: 20px;
             background: #fff;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -30,8 +29,10 @@
             margin: 0;
             font-size: 2.5em;
             color: #0073e6;
+            line-height: 1;
         }
         header p {
+            margin: 0;
             font-size: 1.2em;
             color: #666;
         }
@@ -66,6 +67,15 @@
         li {
             margin: 10px 0;
         }
+        .experience, .education, .certifications {
+            padding-left: 0;
+        }
+        .experience li, .education li, .certifications li {
+            margin-bottom: 15px;
+        }
+        .experience strong, .education strong, .certifications strong {
+            color: #0073e6;
+        }
         .date, .institution, .company {
             display: block;
             font-weight: bold;
@@ -86,16 +96,6 @@
             border-radius: 5px;
             margin: 5px;
             font-size: 0.9em;
-        }
-        .description {
-            margin: 10px 0;
-        }
-        .certifications a {
-            color: #0073e6;
-            text-decoration: none;
-        }
-        .certifications a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
@@ -150,17 +150,25 @@
                     <span class="date">July 2019 - April 2020</span>
                     <span class="company">Exadatum Software Services Pvt Ltd</span>
                     <span class="location">Pune, Maharashtra, IN</span>
-                    <p class="description">
-                        Led the setup of a Spark cluster on Docker, using Apache Livy to run Spark code in Jupyter Notebooks, reducing the need for expensive Google Cloud Dataproc. Created Java JUnit tests to ensure smooth data flow from Kafka and Google Cloud Storage, simplifying the project structure by merging multiple subprojects.
-                    </p>
+                    <ul>
+                        <li>Led the setup of a Spark cluster on Docker, using Apache Livy to run Spark code in Jupyter Notebooks, reducing the need for expensive Google Cloud Dataproc.</li>
+                        <li>Created Java JUnit tests to ensure smooth data flow from Kafka and Google Cloud Storage, simplifying the project structure by merging multiple subprojects.</li>
+                    </ul>
                 </li>
                 <li>
                     <span class="date">Aug 2023 - present</span>
                     <span class="company">Amagi Media Labs Pvt Ltd</span>
                     <span class="location">Bengaluru, Karnataka, IN</span>
-                    <p class="description">
-                        Implemented GitOps-based deployment strategies for microservices across multiple environments, ensuring seamless deployment processes. Configured CI/CD pipelines for automated testing and deployment, integrating container security scanning for enhanced service security. Managed infrastructure updates, including transitioning nodes and implementing efficient node management solutions. Developed cost optimization strategies, such as resource tagging and database migration, to optimize cloud spending. Enhanced service discovery and routing by configuring load balancer controllers and ingress controllers for improved traffic management. Developed Slack-Bot features for self-serve deployment and automation of deployment processes, reducing manual effort. Established monitoring and alerting mechanisms for PRs, deployments, and cost management to ensure system stability and cost efficiency. Leveraged Infrastructure as Code (IaC) principles using Pulumi for infrastructure provisioning and management.
-                    </p>
+                    <ul>
+                        <li>Implemented GitOps-based deployment strategies for microservices across multiple environments, ensuring seamless deployment processes.</li>
+                        <li>Configured CI/CD pipelines for automated testing and deployment, integrating container security scanning for enhanced service security.</li>
+                        <li>Managed infrastructure updates, including transitioning nodes and implementing efficient node management solutions.</li>
+                        <li>Developed cost optimization strategies, such as resource tagging and database migration, to optimize cloud spending.</li>
+                        <li>Enhanced service discovery and routing by configuring load balancer controllers and ingress controllers for improved traffic management.</li>
+                        <li>Developed Slack-Bot features for self-serve deployment and automation of deployment processes, reducing manual effort.</li>
+                        <li>Established monitoring and alerting mechanisms for PRs, deployments, and cost management to ensure system stability and cost efficiency.</li>
+                        <li>Leveraged Infrastructure as Code (IaC) principles using Pulumi for infrastructure provisioning and management.</li>
+                    </ul>
                 </li>
             </ul>
         </section>
